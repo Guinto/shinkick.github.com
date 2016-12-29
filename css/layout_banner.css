@@ -1,0 +1,533 @@
+body {
+	font-family: Marvel, Helvetica, sans-serif;
+	margin: 0px;
+}
+
+body.preview {
+	padding-bottom: 240px;
+}
+
+.share_button {
+	position:absolute;
+	bottom:20px;
+	right:20px;
+	font-family: inherit;
+	font-weight: bold;
+	color: rgba(255,255,255,0.85);
+	border: 1px solid rgba(255,255,255,0.85);
+	background-color: rgba(0,0,0,0.1);
+	opacity: .75;
+}
+
+.share_button:hover {
+	font-family: inherit;
+	font-weight: bold;
+	color: rgba(255,255,255,0.85);
+	border: 1px solid rgba(255,255,255,0.85);
+	background-color: rgba(0,0,0,0.1);
+	opacity: 1;
+}
+
+.share_button:before {
+	opacity: 0.85;
+	background: url("/css/share_icon.png");
+}
+
+.bg_align_top {
+	background-position: top;
+}
+
+.bg_align_bottom {
+	background-position: bottom;
+}
+
+.bg_align_center {
+	background-position: center;
+}
+
+.album_description {
+	margin: 1em 0px;
+}
+
+#artist_links {
+	margin: 10px 0px 0px 0px;
+}
+
+a.artist_link {
+	text-align: left;
+	display: inline-block;
+	transition: opacity 0.5s;
+	margin: 0px 5px;
+}
+
+a.artist_link:hover {
+	opacity: 0.6;
+}
+
+a.artist_link .link_icon {
+	width: 2.25em;
+	height: 2.25em;
+}
+
+a.icon_link {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0px 3px;
+}
+
+a.icon_link:hover div {
+	opacity: 0.6;
+}
+
+#artist_links .unrecognized {
+	margin: 1em 0px;
+}
+#artist_links .unrecognized .artist_link {
+	text-decoration: none;
+	margin: 2px 0px;
+	font-weight: bold;
+}
+
+.release_date {
+	margin: 1em 0px;
+}
+
+#page_wrapper,
+#morecontainer,
+footer {
+	width: 100%;
+	max-width: 850px;
+	margin: auto;
+	overflow: hidden;
+}
+
+#page_wrapper {
+	margin-top: 30px;
+	margin-bottom: 6em;
+}
+
+.single #page_wrapper {
+	max-width: 360px;
+	text-align: center;
+}
+
+#oalbum-list {
+	background: lightgray;
+}
+
+.oalbum-item {
+	display: inline-block;
+	padding: 20px;
+	margin-top:10px;
+	width: 200px;
+	vertical-align: top;
+}
+
+#morebutton {
+	background-color: lightgray;
+	width: 200px;
+	height: 40px;
+	font-size: 1.5em;
+	line-height:40px;
+	border-radius: 5px;
+	margin-bottom: -5px;
+}
+
+footer {
+	border-top: 1px solid;
+	padding: 10px 0px;
+}
+
+#banner_block {
+	width: 100%;
+	position: relative;
+	margin: 0px;
+	overflow: hidden;
+}
+
+#banner_block .banner_image {
+	position: absolute;
+	top: -3%;
+	left: -3%;
+	width: 106%;
+	height: 106%;
+	background-size: cover;
+	overflow: hidden;
+	z-index: -1;
+}
+
+#banner_block .album_cover_wrapper {
+	width: 100%;
+	max-width: 850px;
+	margin: auto;
+}
+
+#banner_block .album_cover {
+	width: 400px;
+	height: 400px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 15px solid rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.5);
+	margin-left: 32%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.single #banner_block .album_cover {
+	margin: auto;
+	height: auto;
+}
+
+#banner_block .album_cover img {
+	width: 100%;
+}
+
+#banner_block .album_cover .play_overlay {
+	opacity: 0;
+	position: absolute;
+	width: 370px;
+	height: 370px;
+	z-index: 2;
+	background-color: rgba(0,0,0,.50);
+	pointer-events: none;
+	transition: opacity 0.5s;
+}
+
+#banner_block .album_cover .play_overlay img {
+	position: absolute;
+	left: 120px;
+	top: 120px;
+	width: auto;
+	height: auto;
+	width: initial;
+	height: initial;
+}
+
+.single #banner_block .album_cover .play_overlay.active {
+	opacity: 1.0;
+}
+
+.single #banner_block .album_cover .play_overlay.is_playing img.play_icon {
+	display: none;
+}
+
+.single #banner_block .album_cover .play_overlay img.pause_icon {
+	display: none;
+}
+
+.single #banner_block .album_cover .play_overlay.is_playing img.pause_icon {
+	display: block;
+}
+
+.single .album_cover_image {
+	cursor: pointer;
+}
+
+.single.no_track_url .album_cover_image {
+	cursor: initial;
+}
+
+.single.no_track_url #tracks {
+	display: none;
+}
+
+#banner_block .spacer {
+	height: 20px;
+	width: 100%;
+}
+
+.album_name_large {
+	font-size: 2.6em;
+	padding-top: 7px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	line-height: 1.1em;
+	margin-bottom: 5px;
+}
+
+.artist_name {
+	font-size: 1.5em;
+	font-style: italic;
+	opacity: 0.85;
+}
+
+.column {
+	margin: 0px;
+	box-sizing: border-box;
+	vertical-align: top;
+	padding: 10px;
+}
+
+.column.left {
+	float: left;
+	max-width: 29%;
+	text-align: right;
+}
+
+.single .column.left {
+	float: none;
+	max-width: none;
+	text-align: center;
+	position: relative;
+}
+
+.single #tracks .track_play_pause_button {
+	margin-left: 0px;
+}
+
+.single .track_name,
+.single .track_artist_name {
+	display: none;
+}
+
+.single #tracks li {
+	margin: 0px;
+}
+
+.single #tracks .progress_bar {
+	width: 70%;
+	float: right;
+	margin-top: 16px;
+	clear: none;
+}
+
+.single #tracks .track_play_pause_button {
+	height: 40px;
+	width: 40px;
+}
+
+.column.right {
+	width: auto;
+	overflow: hidden;
+	padding-left: 30px;
+}
+
+.single .column.right,
+.single .column.left {
+	padding: 0px;
+}
+
+#tracks li a{
+	transition: transform 0.25s;
+}
+#tracks li a:hover{
+	transform: scale(1.2,1.2);
+}
+#tracks .track_name_and_duration.no_artist_name {
+	margin-top: 5px;
+}
+
+.single #tracks .track_name_and_duration {
+	float: right;
+	margin: 10px 0px 0px 0px;
+}
+
+.single #tracks .progress_bar_bg,
+.single #tracks .progress_indicator {
+	height: 3px;
+}
+
+.single #tracks .active .progress_bar:hover .progress_indicator {
+	height: 5px;
+	top: 9px;
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+}
+
+.single #tracks .track_duration {
+	margin-top: 2px;
+}
+
+.warning {
+	padding: 10px;
+	color: white;
+	background-color: black;
+	border: 1px dashed white;
+}
+
+.single #buy_buttons .bb_label {
+	text-align: center;
+}
+.single #buy_buttons {
+	width: 100%;
+	text-align: center;
+}
+.single .buy_button_link {
+	width: 43%;
+	text-align: left;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+/** Share fix for IE **/
+	share-button .sb-social.sb-left.sb-top {
+		left: -280px;
+		-ms-transform: none;
+		transform: none;
+	}
+	share-button .sb-social ul li::before, share-button .sb-social ul li::after {
+		-ms-transform: none;
+	}
+	share-button .sb-top.active.sb-left.sb-social {
+		top: -3em;
+	}
+
+@media (max-width: 600px) {
+	body.preview {
+		padding-bottom: 275px;
+	}
+
+	#buy_buttons {
+		width: 100%;
+		text-align: center;
+	}
+	#buy_buttons .bb_label {
+		text-align: center;
+	}
+	#buy_buttons .buy_button_link {
+		display: inline-block;
+		width: 43%;
+		text-align: left;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+	.buy_button_link .bb_link_icon {
+		margin: 0px 6px 0px 15px;
+	}
+
+	.column.left,
+	.column.right {
+		width: 90%;
+		padding: 0;
+		text-align: center;
+		max-width: none;
+		margin: auto;
+		float: none;
+		overflow: visible;
+	}
+	#banner_block {
+		height: auto;
+		width: 100%;
+		position: relative;
+		text-align: center;
+		margin: 0px;
+	}
+	body.TODO #banner_block .banner_image.blur_1 {
+		-webkit-filter: blur(5px);
+		-moz-filter: blur(5px);
+		-o-filter: blur(5px);
+		-ms-filter: blur(5px);
+		filter: blur(5px);
+	}
+	#banner_block .album_cover {
+		width: 240px;
+		height: 240px;
+		max-width: 100%;
+		margin: auto;
+		border: none;
+	}
+	.album_name_large {
+		font-size: 2.75em;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	.artist_name {
+		font-size: 1.5em;
+		margin-bottom: 12px;
+	}
+	#tracks {
+		text-align: left;
+	}
+	#tracks .progress_bar {
+		margin: 22px 0px 0px 0px;
+	}
+	#tracks li {
+		margin: 0px 0px 40px 0px;
+	}
+	#artist_links {
+		display: none;
+	}
+	#artist_links.relocated {
+		display: block;
+		margin-top: 50px;
+	}
+	#tracks .track_play_pause_button {
+		height: 40px;
+		width: 40px;
+		margin: 5px 0px 0px 0px;
+	}
+	#tracks .track_name_and_duration,
+	#tracks .track_artist_name {
+		margin-left: 55px;
+	}
+	#page_wrapper {
+		margin-bottom: 20px;
+	}
+	a.artist_link .link_icon {
+		width: 40px;
+		height: 40px;
+	}
+	.share_button {
+		position:relative;
+		margin: auto;
+		margin: 1em 0px;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+	}
+	#tracks li a:hover{
+		transform: none;
+	}
+	#banner_block .spacer {
+		display: none;
+	}
+	#banner_block .album_cover {
+		border: none;
+		width: 100%;
+		height: auto;
+	}
+	#banner_block .banner_image {
+		width: 0;
+		height: 0;
+	}
+	#page_wrapper {
+		margin-top: 0px;
+	}
+	#tracks .track_name_and_duration.no_artist_name {
+		margin-top: 10px;
+	}
+	::-webkit-scrollbar { 
+		display: none; 
+	}
+	html.is_firefox {
+		overflow: hidden;
+	}
+	.oalbum-item {
+		margin-top: 5px;
+		padding:10px;
+	}
+	.single .album_cover #tracks {
+		padding: 0px 10px;
+	}
+	.single .playlinks {
+		height: 40px;
+	}
+	.single #banner_block .album_cover .play_overlay {
+		width: 100%;
+		height: 0px;
+		padding-bottom: 100%;
+	}
+	.single #banner_block .album_cover .play_overlay img {
+		left: 50%;
+		top: 50%;
+		margin-left: -70px;
+		margin-top: -70px;
+	}
+}

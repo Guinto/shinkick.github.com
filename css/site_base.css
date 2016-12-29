@@ -1,0 +1,334 @@
+body {
+	overflow-x: hidden;
+}
+
+.only_semantic {
+	display: none;
+}
+
+footer {
+	text-align: center;
+	padding: 2em 1em;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: .8em;
+	box-sizing: border-box;
+}
+
+footer a {
+	color: inherit;
+}
+
+footer .footer_site_link {
+	margin: 0px 10px;
+	display: inline-block;
+	height: 25px;
+}
+
+footer .footer_site_link:hover {
+	opacity: 0.85;
+	cursor: pointer;
+}
+
+footer .footer_site_link object {
+	height: 25px;
+	width: 115px;
+	display: inline-block;
+	pointer-events: none;
+}
+a {
+	color: inherit;
+	fill: inherit;
+}
+
+
+/** Audio player **/
+	#tracks li,
+	#tracks ul {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#tracks li {
+		list-style: none;
+		margin: 20px 0px;
+		transition: color 1s;
+		opacity: 0.85;
+		font-size: 1.5em;
+	}
+
+	#tracks li.active {
+		opacity: 1;
+	}
+
+	#tracks li.active .track_name {
+		font-weight: bold;
+	}
+
+	#tracks ul a {
+		color: inherit;
+		text-decoration: none;
+		display: block;
+		float: left;
+	}
+
+	#tracks .track_name_and_duration,
+	#tracks .track_artist_name {
+		margin-left: 53px;
+	}
+
+	#tracks .track_duration {
+		float: right;
+		margin: 0px 0px 5px 10px;
+	}
+
+	#tracks .track_play_pause_button {
+		display: block;
+		height: 25px;
+		width: 25px;
+		margin-top: 7px;
+		margin-left: 8px;
+	}
+
+	#tracks .pause_button_icon,
+	#tracks .play_button_icon {
+		transition: opacity 0.5s;
+	}
+
+	#tracks .is_playing .pause_button_icon,
+	#tracks .play_button_icon {
+		opacity: 1;
+	}
+
+	#tracks .is_playing .play_button_icon,
+	#tracks .pause_button_icon {
+		opacity: 0;
+	}
+
+	#tracks .progress_bar {
+		position: relative;
+		height: 20px;
+		clear: both;
+		width: 100%;
+	}
+
+	#tracks .progress_bar_bg,
+	#tracks .progress_indicator {
+		height: 1px;
+		border-radius: 5px;
+		position: absolute;
+		top: 10px;
+		left: 0px;
+	}
+
+	#tracks .active .progress_bar {
+		cursor: pointer;
+	}
+
+	#tracks .progress_bar_bg {
+		width: 100%;
+		background-color: rgba(0,0,0,0.25);
+	}
+
+	#tracks .progress_indicator {
+		background-color: rgba(0,0,0,0.9);
+		width: 0%;
+		transition: width .5s;
+		-webkit-filter: blur(1px);
+		-moz-filter: blur(1px);
+		-o-filter: blur(1px);
+		-ms-filter: blur(1px);
+		filter: blur(1px);
+	}
+
+	#tracks .active .progress_bar:hover .progress_indicator {
+		height: 3px;
+		top: 9px;
+		-webkit-filter: blur(2px);
+		-moz-filter: blur(2px);
+		-o-filter: blur(2px);
+		-ms-filter: blur(2px);
+		filter: blur(2px);
+	}
+
+	#tracks .track_artist_name {
+		font-style: italic;
+		font-size: .8em;
+	}
+
+	#tracks .play_hidden .track_play_pause_button {
+		display: none;
+	}
+
+/* buy buttons */
+	#buy_buttons {
+		border-radius: 23px;
+		padding: 0px;
+		text-align: left;
+		width: 160px;
+		display: inline-block;
+		margin: 20px 0px 10px 0px;
+		text-align: right;
+	}
+	#buy_buttons .buy_button_link {
+		border-radius: 30px;
+		border: 1px solid #444;
+		padding: 9px 0px;
+		margin-top: 14px;
+		cursor: pointer;
+		display: inline-block;
+		text-align: left;
+	}
+	#buy_buttons .bb_label {
+		width: 100%;
+		text-align: right;
+	}
+	#buy_buttons .bb_label,
+	#buy_buttons .bb_link_label {
+		font-size: 20px;
+	}
+
+	.buy_button_link {
+		cursor: pointer;
+		width: 85%;
+	}
+	
+	.buy_button_link .bb_link_icon {
+		width: 28px;
+		height: 28px;
+		padding: 0px;
+		margin: 0px 14px 0px 15px;
+	}
+	.buy_button_link .bb_link_label,
+	.buy_button_link .bb_link_icon {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+/* multi_album */
+	.multi_album_holder {
+		width: 100%;
+		text-align: left;
+		padding: 0px;
+		white-space: nowrap;
+	}
+
+	.multi_album_holder,
+	.multi_album_holder h1, .multi_album_holder h2,
+	.multi_album_holder h3, .multi_album_holder h4,
+	.multi_album_holder h5, .multi_album_holder h6 {
+		font-family: "Marvel", sans-serif;
+	}
+
+	.multi_album_holder h1 {
+		font-size: 27px;
+		margin: 0px 0px 35px 0px;
+		text-align: center;
+	}
+
+	.multi_album_holder>h1 {
+		font-weight:400;
+	}
+
+	.artist_block .artist_header {
+		text-align: left;
+		margin: 0px;
+	}
+
+	.artist_block {
+		margin-bottom: 35px;
+	}
+
+	.artist_block>a {
+		float:left;
+		display:block;
+	}
+
+	.multi_album {
+		display: inline-block;
+		height: 391px;
+		padding: 20px;
+		background-color: rgba(0,0,0,0.85);
+		position: relative;
+		margin: 35px 35px 35px 0px;
+		vertical-align: top;
+		color: white;
+	}
+
+	.is_live .multi_album {
+		border: 1px solid #E8B74F;
+	}
+
+	.multi_album .hover_overlay {
+		opacity: 0;
+		pointer-events: none;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color: white;
+		top: 0px;
+		left: 0px;
+	}
+
+	.multi_album:hover .hover_overlay {
+		opacity: 0.5;
+		z-index: 30;
+	}
+
+	.multi_album .live_badge,
+	.multi_album .edit {
+		display: none;
+	}
+
+	.multi_album .live_badge {
+		background-image: url("/img/preview_live_tag.svg");
+		padding: 5px 10px 5px 27px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		color: black;
+		font-size: 27px;
+		font-weight: bold;
+		width: 108px;
+	}
+
+	.multi_album img {
+		width: 207px;
+		height: 207px;
+	}
+
+	.is_live .multi_album .live_badge,
+	.is_live .multi_album .edit {
+		display: block;
+	}
+
+	.is_live .multi_album .preview {
+		display: none;
+	}
+
+	.multi_album .album_attribution {
+		font-style: italic;
+		font-size: 18px;
+		max-height: 3em;
+		line-height: 1em;
+		overflow: hidden;
+		white-space: normal;
+		padding-top: .25em;
+	}
+
+	.multi_album .action_status {
+		position: absolute;
+		bottom: 10px;
+		left: 20px;
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	.multi_album .album_name {
+		margin-top: 10px;
+		font-size: 22px;
+		line-height: 1em;
+		max-height: 3em;
+		overflow: hidden;
+	}

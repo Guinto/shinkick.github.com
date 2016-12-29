@@ -1,0 +1,33 @@
+.theme_colors {
+	background-color: #eee;
+	color: #222;
+	fill: #222;
+}
+.theme_colors_reversed,
+#buy_buttons .buy_button_link:hover {
+	background-color: #222;
+	color: #eee;
+	fill: #eee;
+}
+#banner_block .album_cover {
+	border-color: rgba(255,255,255,0);
+	background-color: rgba(255,255,255,0.5);
+}
+#tracks .progress_indicator {
+	background-color: rgba(0,0,0,.5);
+}
+#tracks .progress_bar_bg {
+	background-color: #222;
+	opacity: 0.25;
+}
+footer {
+	border-color: #222;
+}
+
+
+@media (max-width: 600px) {
+	.share_button,
+	.share_button:hover {
+		background-color: rgba(0,0,0,0.6);
+	}
+}
