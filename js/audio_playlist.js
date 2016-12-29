@@ -104,7 +104,8 @@ var AUDIO_PLAYLIST = (function(){
 			return atob('Ly9jb250ZW50LmNkYmFieS5jb20vYXVkaW8v')+atob(m1=='s'?'c2FtcGxlcw==':'ZnVsbA==') + m2;
 		});
 		var par = link.parent();
-		var is_match = (new_src.split("//")[1] == player.src.split("//")[1]); // ignore protocol for matching
+		var is_match = (new_src == player.src); // ignore protocol for matching
+        console.log(new_src + " == " + player.src);
 		// first, check if player is playing this track already. if so, pause it
 		if (is_match) {
 			if (audio[0].paused) {
@@ -125,6 +126,7 @@ var AUDIO_PLAYLIST = (function(){
 
 		$('.progress_indicator').css("width","0%"); // reset all indicators
 		player.src = new_src;
+        console.log(new_src + " == " + player.src);
 		par.addClass('is_playing').siblings().removeClass('is_playing');
 		par.addClass('active').siblings().removeClass('active');
 
