@@ -39,7 +39,7 @@
 				$(".share_button").addClass("relocated");
 			}
 
-			var share_url = "https://www.shinkickband.com";
+			var share_url = "http://shinkickband.com";
 			var msg_email = "Check the first album from Shin Kick! In Shin Kick's debut album, singer-songwriter Mi-Young Shin teams up with drummer Trent Ellingsen to bring you songs that encourage, challenge and inspire you on your Christian journey. Listen to the lyrics and gift these songs to those closest to you.";
 			var msg_twitter = "Mi-Young Shin teams up with Trent Ellingsen to bring you songs that encourage, challenge and inspire you on your Christian journey.";
 			var share_config = {
@@ -65,28 +65,6 @@
 			new ShareButton(share_config);
 			$('.share_button').css("display:inline-block;");
 
-			if(typeof _paq !== 'undefined') {
-				$('.artist_link').each(function() {
-					var url = $(this).attr('href');
-					var title = $(this).attr('title');
-					$(this).one('click', function() {
-						_paq.push(['trackEvent', 'artist_link_click', url, title]);
-					});
-				});
-				$('.share_button div.sb-social').find('a').each(function() {
-					var network = $(this).parent().attr('data-network');
-					$(this).one('click', function() {
-						_paq.push(['trackEvent', 'share_click', network]);
-					});
-				});
-				$('#buy_button').one('click', function() {
-					_paq.push(['trackEvent', 'buy_click', $(this).attr('href')]);
-				});
-				$('.artist_name').find('a').one('click', function() {
-					_paq.push(['trackEvent', 'artist_click', $(this).attr('href')]);
-				});
-			}
-
 			// readmore config for notes and description
 			$('.album_description').readmore({
 					moreLink: '<a href="#">More</a>',
@@ -104,7 +82,6 @@
 			// buy buttons
 			$(".buy_button_link").on("click", function(){
 				window.open($(this).data("url"), '_blank');
-				_paq.push(["trackEvent", "buy_click", $(this).data("url")]);
 				return false;
 			});
 		});
