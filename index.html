@@ -107,6 +107,20 @@
 <script src="https://script.hotjar.com/modules-197d79caaa971610bcdd7c269360e443.js"></script>
 <style type="text/css"> .album_description + [data-readmore-toggle], .album_description[data-readmore]{display: block; width: 100%;}.album_description[data-readmore]{transition: height 100ms;overflow: hidden;}
 	#mc_embed_signup{background:#eee !important; font-family: Marvel, Helvetica, sans-serif !important;} input.email {font-family: Marvel, Helvetica, sans-serif !important;} #mc_embed_signup .button {font-family: Marvel, Helvetica, sans-serif !important;}
+    #banner_block .spacer {
+        height: 145px;
+    }
+    
+        .js-reframe iframe {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        } .js-reframe {
+            position: relative;
+            width: 100%;
+        }
 </style>
 </head>
 <body class="theme_colors  preview">
@@ -120,16 +134,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	
 	<div id="banner_block">
 		<div class="spacer"></div>
-		<div class="banner_image bg_align_center" style="background-image:url('img/album_image_large_blur.jpg');"></div>
-		<div class="album_cover_wrapper">
-			<div class="album_cover">
-				<div class="play_overlay">
-					<img src="img/play_button_overlay.png" class="play_icon" alt="play">
-					<img src="img/pause_button_overlay.png" class="pause_icon" alt="pause">
-				</div>
-				<img class="album_cover_image" src="img/album_image_large.jpg" alt="">
-			</div>
-		</div>
+		<div class="banner_image bg_align_center" style="background-image:url('img/shin_kick_banner.jpg'); height:300px;"></div>
 		<share-button class="share_button sharer-0" style="display: inline-block;">share<div class="sb-social load sb-top sb-left networks-6"><ul><li class="facebook enabled" data-network="facebook"><a title="facebook" onclick="return false"></a></li><li class="twitter enabled" data-network="twitter"><a title="twitter" onclick="return false"></a></li><li class="tumblr enabled" data-network="tumblr"><a title="tumblr" onclick="return false"></a></li><li class="googlePlus enabled" data-network="googlePlus"><a title="googlePlus" onclick="return false"></a></li><li class="pinterest enabled" data-network="pinterest"><a title="pinterest" onclick="return false"></a></li><li class="whatsapp disabled" data-network="whatsapp"><a title="whatsapp" onclick="return false"></a></li><li class="reddit disabled" data-network="reddit"><a title="reddit" onclick="return false"></a></li><li class="linkedin disabled" data-network="linkedin"><a title="linkedin" onclick="return false"></a></li><li class="email enabled" data-network="email"><a title="email"></a></li><li class="whatsApp disabled" data-network="whatsApp"><a title="whatsApp" onclick="return false"></a></li></ul></div></share-button>
 		<div class="spacer"></div>
 	</div>
@@ -138,7 +143,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Begin MailChimp Signup Form -->
 <link href="http://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	#mc_embed_signup{
+        background:#fff; clear:left; font:18px Helvetica,Arial,sans-serif; width:100%;
+    }
+    #mc_embed_signup label {
+        font-size: 22px;
+    }
 	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
@@ -152,9 +162,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
     </div>
 </form>
-</div>
+</div><!--End mc_embed_signup-->
 
-<!--End mc_embed_signup-->
+<iframe id="show-vid" width="" height="" src="https://www.youtube.com/embed/rTeYwAfqva0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 		<div class="column left">
 			<div class="album_name_large">
@@ -318,4 +328,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<div id="ads"></div></body></html>
+<div id="ads"></div>
+
+<script src="js/reframe.js"></script>
+
+<script>
+    reframe('#show-vid');
+</script>
+</body></html>
