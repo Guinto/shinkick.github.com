@@ -1,0 +1,220 @@
+<html lang="en" class=" supports cssfilters"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="csrf-token" content="Wp2cGWBg7S39Efy5XJA9Uk68VSmuCDKKoQZOT5xR">
+	<meta name="robots" content="noindex,nofollow">
+	<title>Shin Kick - You
+</title>
+
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script>
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W8M67R"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
+<![endif]-->
+<!--[if lt IE 10]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/Base64/0.3.0/base64.min.js"></script>
+<![endif]-->
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/track_refresher.js?1"></script>
+	<script src="js/readmore.min.js"></script>
+	<script src="js/share-button.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			TRACK_REFRESHER.init("fFPYXnIGaj/DGJ8PSmyWL9fm541YZ0cDrjzuuXxAzc",526000);
+			var play_overlay_timeout;
+
+			$("body").addClass("preview");
+			$("body").addClass("");
+			var is_small_screen = $(window).width() <= 600;
+			if (is_small_screen) {
+				$("#artist_links").appendTo(".column.right");
+				$("#artist_links").addClass("relocated");
+				$(".share_button").appendTo(".column.right");
+				$(".share_button").addClass("relocated");
+			}
+
+			var share_url = "http://shinkickband.com";
+			var msg_email = "Check the first album from Shin Kick! In Shin Kick's debut album, singer-songwriter Mi-Young Shin teams up with drummer Trent Ellingsen to bring you songs that encourage, challenge and inspire you on your Christian journey. Listen to the lyrics and gift these songs to those closest to you.";
+			var msg_twitter = "Mi-Young Shin teams up with Trent Ellingsen to bring you songs that encourage, challenge and inspire you on your Christian journey.";
+			var share_config = {
+				url: share_url,
+				ui: {
+					flyout: "top left",
+					buttonText: "share"
+				},
+				networks: {
+					"whatsApp": { enabled: false }, "linkedin": { enabled: false }, "reddit": { enabled: false },
+					"email": {
+						title: "Have you heard You by Shin Kick?",
+						description: msg_email + '\n\n' + share_url
+					},
+					"twitter": {
+						description: msg_twitter
+					}
+				}
+			};
+			if (is_small_screen) {
+				share_config['ui']['flyout'] = "top center";
+			}
+			new ShareButton(share_config);
+			$('.share_button').css("display:inline-block;");
+
+			// readmore config for notes and description
+			$('.album_description').readmore({
+					moreLink: '<a href="#">More</a>',
+					lessLink: ''
+				});
+
+			if (!Modernizr.cssfilters) { // really a check for IE
+				// IE doesn't position the share button properly
+				if (!is_small_screen) {
+					$(".share-button .sb-top").css("top","-3em");
+					$(".share-button .sb-top").css("left","-250%");
+				}
+			}
+
+			// buy buttons
+			$(".buy_button_link").on("click", function(){
+				window.open($(this).data("url"), '_blank');
+				return false;
+			});
+		});
+	</script>
+	<script>
+		(function(h,o,t,j,a,r){
+			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			h._hjSettings={hjid:135182,hjsv:5};
+			a=o.getElementsByTagName('head')[0];
+			r=o.createElement('script');r.async=1;
+			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			a.appendChild(r);
+			})(window,document,'http://static.hotjar.com/c/hotjar-','.js?sv=');
+	</script><script async="" src="http://static.hotjar.com/c/hotjar-135182.js?sv=5"></script>
+
+	<link rel="stylesheet" href="css/site_base.css?7">
+			
+	<link rel="stylesheet" href="css/share-button.css?1">
+	<link rel="stylesheet" href="css/layout_banner.css?5">
+	
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Marvel:400,400italic,700,700italic" type="text/css">
+	<link class="theme_css" rel="stylesheet" href="css/layout_banner.light.css?2">
+<script src="https://script.hotjar.com/modules-197d79caaa971610bcdd7c269360e443.js"></script>
+<style type="text/css"> .album_description + [data-readmore-toggle], .album_description[data-readmore]{display: block; width: 100%;}.album_description[data-readmore]{transition: height 100ms;overflow: hidden;}
+	#mc_embed_signup{background:#eee !important; font-family: Marvel, Helvetica, sans-serif !important;} input.email {font-family: Marvel, Helvetica, sans-serif !important;} #mc_embed_signup .button {font-family: Marvel, Helvetica, sans-serif !important;}
+    #banner_block .spacer {
+        height: 145px;
+    }
+    
+        .js-reframe iframe {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        } .js-reframe {
+            position: relative;
+            width: 100%;
+        }
+</style>
+</head>
+<body class="theme_colors  preview">
+	<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-W8M67R"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W8M67R');</script><iframe id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/rcj-2e6153f931e5c8a79f89c0c503e3c25e.html" style="position: fixed !important; top: -100px !important; left: -100px !important; width: 1px !important; height: 1px !important;"></iframe>
+	
+	<div id="banner_block">
+		<div class="spacer"></div>
+		<div class="banner_image bg_align_center" style="background-image:url('img/shin_kick_banner.jpg'); height:300px;"></div>
+		<share-button class="share_button sharer-0" style="display: inline-block;">share<div class="sb-social load sb-top sb-left networks-6"><ul><li class="facebook enabled" data-network="facebook"><a title="facebook" onclick="return false"></a></li><li class="twitter enabled" data-network="twitter"><a title="twitter" onclick="return false"></a></li><li class="tumblr enabled" data-network="tumblr"><a title="tumblr" onclick="return false"></a></li><li class="googlePlus enabled" data-network="googlePlus"><a title="googlePlus" onclick="return false"></a></li><li class="pinterest enabled" data-network="pinterest"><a title="pinterest" onclick="return false"></a></li><li class="whatsapp disabled" data-network="whatsapp"><a title="whatsapp" onclick="return false"></a></li><li class="reddit disabled" data-network="reddit"><a title="reddit" onclick="return false"></a></li><li class="linkedin disabled" data-network="linkedin"><a title="linkedin" onclick="return false"></a></li><li class="email enabled" data-network="email"><a title="email"></a></li><li class="whatsApp disabled" data-network="whatsApp"><a title="whatsApp" onclick="return false"></a></li></ul></div></share-button>
+		<div class="spacer"></div>
+	</div>
+	<div id="page_wrapper">
+
+<!-- Begin MailChimp Signup Form -->
+<link href="http://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{
+        background:#fff; clear:left; font:18px Helvetica,Arial,sans-serif; width:100%;
+    }
+    #mc_embed_signup label {
+        font-size: 22px;
+    }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//shinkickband.us14.list-manage.com/subscribe/post?u=74566b57c7602440a655b2cd5&amp;id=249559bf96" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Hear about shows, new releases, and other news from us.</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_74566b57c7602440a655b2cd5_249559bf96" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div><!--End mc_embed_signup-->
+
+<div style="margin-bottom: 40px;">
+<h1>Halleluiah</h1>
+
+Praise the Lord, praise the Lord, O my soul!
+<br/>
+
+[Chorus]
+<br/>
+
+     It is well           (It is well)
+<br/>
+     With my soul         (With my soul)
+<br/>
+     It is well, it is well, with my soul.
+<br/>
+
+[Verse]
+<br/>
+
+And, Lord, haste the day when my faith shall be sight,
+<br/>
+The clouds be rolled back as a scroll;
+<br/>
+The trump shall resound, and the Lord shall descend,
+<br/>
+Even so, it is well with my soul.
+<br/>
+
+[Chorus]
+<br/>
+
+     It is well           (It is well)
+<br/>
+     With my soul         (With my soul)
+<br/>
+     It is well, it is well, with my soul.
+     <br/>
+</div>
+
+
+	<footer>
+	</footer>
+
+
+
+
+<div id="ads"></div>
+
+<script src="js/reframe.js"></script>
+
+<script>
+    reframe('#show-vid');
+</script>
+</body></html>
